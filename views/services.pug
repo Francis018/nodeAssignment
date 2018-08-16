@@ -1,0 +1,70 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    meta(name='author', content='Francis Fajardo')
+    link(rel='stylesheet', type='text/css', href='/bootstrap/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='/css/style.css')
+    title Marquis Maintainance 
+  body
+    header
+      .container
+        #branding
+          h1
+            span.highlight Marquis
+            |  Maintenance
+        nav
+          ul
+            li
+              a(href='/') Home
+            li
+              a(href='/about') About
+            li.current
+              a(href='/services') Services
+    section#newsletter
+      .container
+        h1 Let's stay in touch!
+        form
+          input(type='email', placeholder='Enter Email...')
+          button.button_1(type='submit') Subscribe
+    section#main
+      .container
+        article#main-col
+          h1.page-title Services
+          ul#services
+            li
+              h3 Commercial Building
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.
+              p Pricing: $1,000 - $5,000
+            li
+              h3 Cleaning Maintenance
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.
+              p Pricing: $250 per month
+            li
+              h3 Website Hosting
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.
+              p Pricing: $20 per hour (one people)
+        aside#sidebar
+          .dark
+            h3 Get A Quote
+            form.quote
+              div
+                label Name
+                br
+                input(type='text', placeholder='Name')
+              div
+                label Email
+                br
+                input(type='email', placeholder='Emial Address')
+              div
+                label Message
+                br
+                textarea(placeholder='Message')
+              button.button_1(type='submit') Send
+    footer
+      p Marquis Maintenance, Copyright © 2018
