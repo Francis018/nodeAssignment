@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var tasks = require('./routes/tasks');
 
-var port = 3000;
+var port = 5000;
 
 var app = express();
 
@@ -26,7 +26,7 @@ app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/c
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-//app.use('/', index);
+//app.use('/', index);p
 app.use('/api', tasks);
 app.get('/', function(req, res){
     res.render('index');
